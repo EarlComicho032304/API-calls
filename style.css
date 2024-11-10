@@ -1,0 +1,145 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #F5F5F5; /* Light Gray Background */
+    color: #333; /* Dark text color for contrast */
+    font-size: 1.2rem;
+    line-height: 1.6;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+    max-width: 1200px;
+    text-align: center; /* Centers content inside the container */
+}
+
+/* Main Title */
+.main-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000000;  /* Primary Blue */
+    margin-top: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Navbar Buttons */
+.navbar-item.button {
+    font-weight: 600;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    background-color: #007BFF; /* Primary Blue */
+    border-color: #007BFF;
+}
+
+/* Button Hover Effects */
+.navbar-item.button:hover {
+    background-color: #0056b3; /* Darker Blue */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Active Button */
+.navbar-item.button:active {
+    background-color: #004085; /* Even Darker Blue */
+    transform: translateY(2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Duck Image */
+img {
+    max-width: 80%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for the Duck Image */
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Button for 'Give me another duck' */
+.button.is-primary {
+    background-color: #007BFF;
+    border-color: transparent;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button.is-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.button.is-primary:active {
+    background-color: #004085;
+    transform: translateY(2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .navbar-item.button {
+        width: 100%;
+        padding: 14px 40px;
+        margin-bottom: 10px;
+    }
+
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .button.is-primary {
+        width: 100%;
+    }
+}
+
+</style>
+
+</html>
