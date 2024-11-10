@@ -3,30 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ducks</title>
+    <title>Random Pictures of Ducks!</title>
 </head>
 <body>
-    <div id="About">
-        <h1>ABOUT <i>Ramdom Pictures of Ducks<i></h1>
-        <h2><i>Hi! wellcome to Ramdom Pictures of Ducks<i><h2>
-    </div>
 
-    <div id="title_Ducks">
-        <h1>Ducks</h1>
-    </div>
+    <nav>
+        <!-- Main Title -->
+        <div class="container has-text-centered">
+            <h1 class="main-title">Random Pictures of Ducks!</h1>      
+        </div>
 
-    <div id="Ducks">
-        <div class=""
-    </div>
-    
+        <!-- Navbar with One Color Button -->
+        <div class="navbar">
+            <a href="/" class="navbar-item button is-primary">Home</a>
+            <a href="/add" class="navbar-item button is-primary">Upload</a>
+            <a href="/contact" class="navbar-item button is-primary">Contact</a>
+        </div>
 
-        
+        <!-- Centered Duck Section -->
+        <div class="container has-text-centered">
+            <h2 class="subtitle">Here is your Duck!</h2>      
+        </div>
 
-    
+        <!-- Duck Image -->
+        <div class="container has-text-centered">
+            <img id="image" src="api/randomimg?t=1731265525077" alt="Random Duck Image">
+        </div>
 
+        <!-- Button to Get Another Duck -->
+        <div class="container has-text-centered">
+            <a class="button is-primary" onclick="changeImage();">Give me another duck!</a>
+        </div>
+    </nav>
 
+</body>
 
-<nav>
-        <li><a href="Home">Home</a></li>
-        <li><a href="About">About</a></li>
-</nav>
+<style>
