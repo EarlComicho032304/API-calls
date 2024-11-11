@@ -138,8 +138,13 @@ img:hover {
     .button.is-primary {
         width: 100%;
     }
+
+    *,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 }
 
-</style>
-
-</html>
